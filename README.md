@@ -2,8 +2,10 @@
 	<img src="https://raw.githubusercontent.com/FoxStudio24/kino_plus/main/logo%20256.png" width="256" alt="Logo"/><br/>
 <h3 align="center">
 	<img src="https://github.com/FoxStudio24/kino_plus/blob/main/img/promo.gif?raw=true" width="full" alt="Logo"/><br/>
-<h3 align="center">
-	#### Способы устоновки
+
+	
+ 
+ #### Способы устоновки
 * LG WebOS
   Через приложение media station x
 * Samsung Tizen
