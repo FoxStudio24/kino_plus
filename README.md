@@ -7,4 +7,13 @@
 * LG WebOS
 * Samsung Tizen
 * MSX
-* Android 
+* Android
+
+#### Способы устоновки
+* LG WebOS
+  Через приложение media station x
+* Samsung Tizen
+  Через приложение media station x
+* Android
+  Через официальное приложение lampa заменив адрес на
+*https://
