@@ -16,4 +16,4 @@
   Через приложение media station x
 * Android
   Через официальное приложение lampa заменив адрес на
-*https://
+  FoxStudio24.github.io/kino_plus
