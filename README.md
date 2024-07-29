@@ -12,5 +12,5 @@
   Через приложение media station x
 * Android
   Через официальное приложение lampa заменив адрес на
-  (https://kino-plus.vercel.app/)
+  (https://kino-plus.vercel.app)
 
