@@ -1,72 +1,46 @@
 <html lang="en">
-<head>
-    <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();
-   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(97940953, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        ecommerce:"dataLayer"
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97940953" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>КИНО+</title>
-
-    <meta name="description" content="Приложение для просмотра каталога фильмов и сериалов на телевизорах, приставках и смартфонах." />
-
-    <meta property="og:title" content="КИНО+">
-    <meta property="og:description" content="КИНО+ - это приложение для просмотра каталога фильмов и сериалов на телевизорах, приставках и смартфонах.">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image" content="og.png">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
-    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="icons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-config" content="icons/browserconfig.xml">
-    <meta name="theme-color" content="#000000">
-
-    <meta name="referrer" content="never">
-    
-    <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css">
-    <link rel="stylesheet" href="./vender/keypad/style.css">
-
-    <link rel="stylesheet" href="css/app.css?v=4.10">
-</head>
-<body>
-    <div class="welcome"></div>
-
-    <div id="app">
-
-    </div>
-
-    <div class="no-network hide">
-        <div class="no-network__title">Ошибка😟😰</div>
-        <div class="no-network__desc">Не удалось загрузить файл😟😰: <span class="no-network__file"></span></div>
-    </div>
-    
-    <script src="./webos/webOSTV.js"></script>
-    <script src="./vender/jquery/jquery.js"></script>
-    <script src="./vender/notify/notify.js"></script>
-    <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
-    <script src="./vender/navigator/navigator.js"></script>
-    <script src="./vender/keypad/keypad.js"></script>
-    <script src="//www.youtube.com/iframe_api" async></script>
-
-    <script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Lampa - Каталог фильмов и сериалов</title>
+        <meta name="description" content="Приложение для просмотра каталога фильмов и сериалов на телевизорах, приставках и смартфонах."/>
+        <meta property="og:title" content="Lampa - Каталог фильмов и сериалов">
+        <meta property="og:description" content="Приложение для просмотра каталога фильмов и сериалов на телевизорах, приставках и смартфонах.">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image" content="og.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="icons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#1d1f20">
+        <meta name="msapplication-config" content="icons/browserconfig.xml">
+        <meta name="theme-color" content="#1d1f20">
+        <meta name="referrer" content="never">
+        <link rel="stylesheet" href="./vender/scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="./vender/keypad/style.css">
+        <link rel="stylesheet" href="css/app.css?v=4.10">
+    </head>
+    <body>
+        <div class="welcome"></div>
+        <div id="app">
+</div>
+        <div class="no-network hide">
+            <div class="no-network__title">Ошибка</div>
+            <div class="no-network__desc">Не удалось загрузить файл: 
+                <span class="no-network__file"></span>
+            </div>
+        </div>
+        <script src="./webos/webOSTV.js"></script>
+        <script src="./vender/jquery/jquery.js"></script>
+        <script src="./vender/notify/notify.js"></script>
+        <script src="./vender/scrollbar/jquery.scrollbar.js"></script>
+        <script src="./vender/navigator/navigator.js"></script>
+        <script src="./vender/keypad/keypad.js"></script>
+        <script src="//www.youtube.com/iframe_api" async></script>
+        <script>
     function putScript(scripts){
         var add = function(src){
             console.log('Loader', 'try-load-script', src)
@@ -110,5 +84,6 @@
 
     putScript('app.min.js?v=' + Math.random());
     </script>
-</body>
+        <script src="/lampainit.js"></script>
+    </body>
 </html>

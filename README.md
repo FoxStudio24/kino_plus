@@ -1,16 +1,23 @@
-<h3 align="center">
-	<img src="https://raw.githubusercontent.com/FoxStudio24/kino_plus/main/logo%20256.png" width="256" alt="Logo"/><br/>
-<h3 align="center">
-	<img src="https://github.com/FoxStudio24/kino_plus/blob/main/img/promo.gif?raw=true" width="full" alt="Logo"/><br/>
+# Lampa
 
-	
- 
- #### Способы устоновки
+Приложение полностью бесплатное и использует публичные ссылки для просмотра информации о фильмах, новинках, популярных фильмов и т.д. Вся доступная информация используется исключительно в познавательных целях, приложение не использует свои собственные серверы для распространения информации.
+
+Исходники лампы доступны тут: https://github.com/yumata/lampa-source
+
+#### Устройства
 * LG WebOS
-  Через приложение media station x
 * Samsung Tizen
-  Через приложение media station x
-* Android
-  Через официальное приложение lampa заменив адрес на
-  (https://kino-plus.vercel.app)
+* MSX
 
+## Установка для MSX
+
+На данный момент ручная установка, вам необходим свой собственный хостинг или локальный веб-сервер. 
+
+1. Тут же нажмите на зеленую кнопку (Code) и выберите (Download ZIP) загрузите файлы на хостинг или веб-сервер.
+2. Откройте файл `msx/start.json` и замените содержиое `{domain}` на свой домен или IP
+3. Откройте MSX и выполните установку
+
+## Запуск в Docker'е
+
+1. Соберите образ `docker build --build-arg domain={domain} -t lampa . `
+2. Запустите контейнер `docker run -p 8080:80 -d --restart unless-stopped -it --name lampa lampa`
